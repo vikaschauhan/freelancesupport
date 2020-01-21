@@ -1,0 +1,99 @@
+/*
+  =========================================
+     Sieve Client Css
+  =========================================
+*/
+/*
+===========  Repeated classes =================
+*/
+button[type="submit"] {
+  cursor: pointer; }
+
+.form-control:error {
+  border-color: red; }
+
+.spinner-border {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: text-bottom;
+  border: .2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: b .75s linear infinite;
+  color: #2c7be5 !important; }
+
+.custom-form .load-ico {
+  position: absolute !Important;
+  right: 10px;
+  top: 18px; }
+.custom-form .form-control.error {
+  border-color: red; }
+.custom-form .form-label-group.error .form-control {
+  border-color: red; }
+.custom-form .form-label-group.error .load-ico {
+  display: none !important; }
+.custom-form .form-label-group.error .loading {
+  display: none; }
+.custom-form .form-label-group.success .loading {
+  display: none; }
+.custom-form .form-label-group.success .error-message {
+  display: none; }
+.custom-form .error-message {
+  font-size: 13px;
+  color: red;
+  margin-top: 5px; }
+.custom-form .fe-check {
+  background: #2c7be5;
+  color: white;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: inline-block;
+  margin-left: -30px;
+  font-size: 12px;
+  margin-right: 15px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 900;
+  border-radius: 50%; }
+
+.unique-url {
+  display: flex;
+  align-items: center; }
+  .unique-url .form-control {
+    float: left;
+    width: 70%; }
+  .unique-url.error {
+    margin-bottom: 35px; }
+    .unique-url.error .error-message {
+      position: absolute;
+      bottom: -40px;
+      margin: 0px; }
+  .unique-url .load-ico {
+    right: 115px; }
+  .unique-url .workspace_field {
+    margin-left: 5px; }
+
+    .unique-card-url {
+      display: flex;
+      align-items: center; }
+      .unique-card-url .form-control {
+        float: left;
+        width: 70%; }
+      .unique-card-url.error {
+        margin-bottom: 35px; }
+        .unique-card-url.error .error-message {
+          position: absolute;
+          bottom: -40px;
+          margin: 0px; }
+      .unique-card-url .load-ico {
+        right: 115px; }
+      .unique-card-url .workspace_field {
+        margin-left: 5px; }
+
+        
+.custom-form .form-label-group > .form-control:not(:placeholder-shown) ~ label {
+  top: 5px; }
+
+/*# sourceMappingURL=style.css.map */
