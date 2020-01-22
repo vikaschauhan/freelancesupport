@@ -26,16 +26,65 @@ body {
     margin-right: -20px;
     margin-left: -20px;
 }
+/* Navigation style */
 .navbar {
-    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    -webkit-transition-property: background-color,color;
-    transition-property: background-color,color;
+    transition: background-color 0.2s ease-in-out 0s, color;
     z-index: 1030;
-}
-.navbar {
     padding: 1.25rem 0;
 }
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.bg-white {
+    background-color: rgb(255, 255, 255) !important;
+}
+@media (min-width: 992px){
+    .navbar-expand-lg {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        flex-flow: row nowrap;
+    }
+    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-xl {
+        flex-wrap: nowrap;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        flex-basis: auto;
+        display: flex !important;
+    }
+    
+}
+.navbar-light .navbar-brand {
+    color: rgb(51, 94, 234);
+}
+.navbar-brand {
+    font-weight: 600;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    margin-right: 0px;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(80, 102, 144);
+    border-color: transparent;
+}
+.navbar-collapse .navbar-toggler {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+}
+/* =============ends========== */
 /* Headings */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
@@ -424,3 +473,48 @@ h6 {
 .bg-gradient-light {
     background-image: linear-gradient(rgb(249, 251, 253) 0px, rgb(255, 255, 255) 100%);
 }
+/* Section Style starts here */
+.bg-dark {
+    background-color: rgb(27, 42, 78) !important;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+@media (min-width: 768px){
+    .pb-md-11, .py-md-11 {
+        padding-bottom: 6rem !important;
+        padding-top: 6rem !important;
+    }
+}
+
+.position-relative {
+    position: relative !important;
+}
+.shape:not([class*="shape-blur"]) {
+    overflow: hidden;
+}
+.shape-bottom {
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.shape {
+    position: absolute;
+    pointer-events: none;
+}
+.text-gray-200 {
+    color: rgb(241, 244, 248) !important;
+}
+/* ==section style ends here== */
+/* Footer style */
+.bg-gray-200 {
+    background-color: rgb(241, 244, 248) !important;
+}
+@media (min-width: 768px){
+    .pb-md-11, .py-md-11 {
+        padding-bottom: 6rem !important;
+        padding-top: 6rem !important;
+    }
+}
+
+/* ==footer style ends here */
