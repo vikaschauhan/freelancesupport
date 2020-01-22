@@ -5,7 +5,27 @@ body {
     color: #161c2d;
     background-color: #fff;
 }
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    position: relative;
+    z-index: 1;
+}
 
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1040px;
+    }
+    }
+.container {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+}
+.row{
+    margin-right: -20px;
+    margin-left: -20px;
+}
 .navbar {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -16,6 +36,35 @@ body {
 .navbar {
     padding: 1.25rem 0;
 }
+/* Headings */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1;
+}
+.h1, .h2, .h3, .h4, h1, h2, h3, h4 {
+    letter-spacing: -.01em;
+}
+.h1, .h2, h1, h2 {
+    margin-bottom: 1rem;
+}
+.h2, h2 {
+    line-height: 1.35;
+}
+.h2, h2 {
+    font-size: 1.9375rem;
+}
+.h3, h3 {
+    line-height: 1.4;
+}
+.h3, h3 {
+    font-size: 1.3125rem;
+}
+
+
+/* ================= */
+
+
 @media (min-width: 768px){
 .pt-md-11, .py-md-11 {
     padding-top: 6rem!important;
@@ -24,6 +73,9 @@ body {
 .pb-md-8, .py-md-8 {
     padding-bottom: 3rem!important;
     padding-top: 3rem!important;
+}
+.mb-md-8, .my-md-8 {
+    margin-bottom: 3rem!important;
 }
 .pt-md-12, .py-md-12 {
     padding-top: 8rem!important;
@@ -58,6 +110,9 @@ body {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+}
+.w-lg-130 {
+    width: 130%!important;
 }
 }
 .navbar-nav .nav-link {
@@ -97,9 +152,7 @@ body {
     font-weight: 400;
     
 }
-.h1, .h2, h1, h2 {
-    margin-bottom: 1rem;
-}
+
 .lift:focus, .lift:hover {
     box-shadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1)!important;
     -webkit-transform: translate3d(0,-3px,0);
@@ -120,4 +173,97 @@ body {
 .icon>svg {
     width: 3rem;
     height: 3rem;
+}
+.card-border {
+    position: relative;
+}
+.card {
+    position: relative;
+    width: 100%;
+}
+.border-primary {
+    border-color: #335eea!important;
+}
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid #f1f4f8;
+    border-radius: .375rem;
+}
+.card-body, .card-footer, .card-img, .card-img-left, .card-img-right, .card-img-top, .card-meta {
+    position: relative;
+    min-height: 1px;
+}
+.card-body {
+    display: block;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+}
+.card-body {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 2rem;
+}
+.icon-circle {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 4.1875rem;
+    height: 4.1875rem;
+    border-radius: 50%;
+}
+.text-white {
+    color: #fff!important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 1.5rem!important;
+}
+.bg-primary {
+    background-color: #335eea!important;
+}
+.text-gray-600 {
+    color: #869ab8!important;
+}
+.text-primary {
+    color: #335eea!important;
+}
+.shape-blur-4 {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(1.3);
+    transform: translateX(-50%) scale(1.3);
+}
+.shape {
+    position: absolute;
+    pointer-events: none;
+}
+.text-gray-200 {
+    color: #f1f4f8!important;
+}
+.img-skewed-left {
+    -webkit-perspective-origin: left center;
+    perspective-origin: left center;
+}
+.img-skewed {
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.screenshot {
+    border-radius: .625rem;
+    box-shadow: 25px 60px 125px -25px rgba(80,102,144,.1), 16px 40px 75px -40px rgba(0,0,0,.2);
 }
